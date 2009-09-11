@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>{{ page.title }}</title>
@@ -13,20 +13,30 @@
     <![endif]--> 
     <style type="text/css">
       /* <![CDATA[ */
+      #breadcrumbs dt {margin-right:1em; float: left;}
+      .hp {padding-bottom: 0;}
+      .hp p {padding-bottom: 0;}
       /* ]]> */
     </style>
   </head>
   <body>
-    <div id="content" class="main">
+    <div id="header" class="main">
       <div class="clear">&nbsp;</div>
       <div class="hp"><h1>{{ page.title }}</h1></div>
-      <br class="clear" />
-      <div class="hp clearfix"><p>leopay's blog</p></div>
+      <div class="hp"><p>Web2.0, Python, Django, Postgresql</p></div>
+      <hr class="clear" />
+      <dl id="breadcrumbs" class="clearfix">
+          <dt><a href="/">Home</a></dt>
+          <dt><a href="/blog.html">Blog</a></dt>
+          <dt><a href="/project.html">Project</a></dt>
+          <dt><a href="/rss.html">Rss</a></dt>
+          <dt><a href="/about.html">About</a></dt>
+      </dl>
       <div class="dl50">
         {{ content }}
       </div>
     </div>
-    <div id='footer' class="hp"> 
+    <div id="footer" class="hp"> 
       <p class="pepper-lite tc">
       Copyright &copy; 2009 leopay. Hosted by <a href='http://github.com/leopay/leopay.github.com/' target='_blank'>GitHub</a> and Powered by <a href='http://github.com/mojombo/jekyll'>Jekyll</a>.
       </p>
