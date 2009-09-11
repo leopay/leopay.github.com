@@ -1,20 +1,42 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>{{ page.title }}</title>
-<link  href="css/reset.css" rel="stylesheet" type="text/css">
-<link  href="css/grid.css" rel="stylesheet" type="text/css">
-<link  href="css/type.css" rel="stylesheet"  type="text/css">
-<!--[if IE]><link  href="css/ie.css" type="text/css" rel="stylesheet"><![endif]-->
-<style type="text/css">
-/* <![CDATA[ */
-/* ]]> */
-</style>
-</head>
-<body>
-    <div>
-       <h1 class="caption">{{ content }}</h1>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen, projection"> 
+    <link rel="stylesheet" href="css/type.css" type="text/css" media="screen, projection"> 
+    <link rel="stylesheet" href="css/plugins/gadgets.css" type="text/css" media="screen, projection"> 
+    <!--[if IE]>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection">
+    <![endif]--> 
+    <style type="text/css">
+      /* <![CDATA[ */
+      /* ]]> */
+    </style>
+  </head>
+  <body>
+    <div id="content" class="main">
+      <div class="clear">&nbsp;</div>
+      <div class="hp"><h1>{{ page.title }}</h1></div>
+      <br class="clear" />
+      <div class="hp clearfix"><p>leopay's blog</p></div>
+      <div class="dl50">
+        {{ content }}
+      </div>
     </div>
-    <div><span>leopay at me.com</span></div>
-</body>
+    <div id='footer' class="hp"> 
+      <p class="pepper-lite tc">
+      Copyright &copy; 2009 leopay. Hosted by <a href='http://github.com/leopay/leopay.github.com/' target='_blank'>GitHub</a> and Powered by <a href='http://github.com/mojombo/jekyll'>Jekyll</a>.
+      </p>
+    </div> 
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-10617373-1");
+        pageTracker._trackPageview();
+      } catch(err) {}</script>
+  </body>
 </html>
