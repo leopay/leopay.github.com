@@ -2,45 +2,56 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>{{ page.title }}</title>
+    <title>leopay blog - {{ page.title }}</title>
     <meta name="keyword" content="Python, Django, Postgresql, Ubuntu, Gentoo, 技术" />
     <meta name="description" content="leopay's blog, 关于Python, Django, Postgresql, Ubuntu, Gentoo, 技术的文章" />
-    <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen, projection"> 
-    <link rel="stylesheet" href="css/type.css" type="text/css" media="screen, projection"> 
-    <link rel="stylesheet" href="css/plugins/gadgets.css" type="text/css" media="screen, projection"> 
+    <link rel="stylesheet" href="/css/grid.css" type="text/css" media="screen, projection"> 
+    <link rel="stylesheet" href="/css/type.css" type="text/css" media="screen, projection"> 
+    <link rel="stylesheet" href="/css/plugins/gadgets.css" type="text/css" media="screen, projection"> 
+    <link rel="stylesheet" href="/css/default.css" type="text/css" media="screen, projection"> 
     <!--[if IE]>
     <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection">
     <![endif]--> 
-    <style type="text/css">
-      /* <![CDATA[ */
-      #breadcrumbs dt {margin-right:1em; float: left;}
-      .hp {padding-bottom: 0;}
-      .hp p {padding-bottom: 0;}
-      /* ]]> */
-    </style>
   </head>
   <body>
-    <div id="header" class="main">
+    <div class="main">
       <div class="clear">&nbsp;</div>
-      <div class="hp"><h1>{{ page.title }}</h1></div>
-      <div class="hp"><p>Web2.0, Python, Django, Postgresql</p></div>
-      <hr class="clear" />
-      <dl id="breadcrumbs" class="clearfix">
+      <div class="hp">
+        <h1>Leopay's Blog</h1>
+        <h6 id="desc">Python, Django, Postgresql</h6>
+      </div>
+      <div id="breadcrumbs" class="clearfix">
+        <dl>
           <dt><a href="/">Home</a></dt>
           <dt><a href="/blog.html">Blog</a></dt>
           <dt><a href="/project.html">Project</a></dt>
           <dt><a href="/rss.html">Rss</a></dt>
           <dt><a href="/about.html">About</a></dt>
-      </dl>
-      <div class="dl50">
-        {{ content }}
+        </dl>
       </div>
+      <div class="dl50"> {{ content }} </div>
     </div>
     <div id="footer" class="hp"> 
       <p class="pepper-lite tc">
       Copyright &copy; 2009 leopay. Hosted by <a href='http://github.com/leopay/leopay.github.com/' target='_blank'>GitHub</a> and Powered by <a href='http://github.com/mojombo/jekyll'>Jekyll</a>.
       </p>
     </div> 
+    <script type="text/javascript">
+    //var disqus_developer = "1";
+    //var disqus_url = "http://localhost:4000{{page.url}}";
+    //<![CDATA[
+    (function() {
+            var links = document.getElementsByTagName('a');
+            var query = '?';
+            for(var i = 0; i < links.length; i++) {
+            if(links[i].href.indexOf('#disqus_thread') >= 0) {
+                    query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+            }
+            }
+            document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/leopayblog/get_num_replies.js' + query + '"></' + 'script>');
+    })();
+    //]]>
+    </script>
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
