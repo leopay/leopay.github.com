@@ -1,0 +1,699 @@
+---
+layout: post 
+title: Unicode Charset
+---
+
+<table border="1" style="width: 70em"> 
+    <tr>
+       <th width="15%"> 文 字 </td> 
+       <th width="15%">范围(10进制)</td> 
+       <th width="15%">范围(16进制)</td> 
+       <th width="15%"> 字符数(个) </td> 
+       <th width="40%"> 目 的 </td> 
+    </tr>
+    <tr> 
+        <td> Basic Latin 基本拉丁语 </td> 
+        <td>0-127</td> 
+        <td>0000-007F</td> 
+        <td> 128 </td> 
+        <td> ASCII码，美式英语 C0 Control and Basic Latin</td> 
+    </tr> 
+    <tr> 
+        <td>Latin-1 Supplement 拉丁语补充-1 </td> 
+        <td> 128-255 </td>
+        <td> 0080-00F0 </td>
+        <td> 128 </td> 
+        <td> ISO Latin-1前半部分结合Basic Latin能处理丹麦语、荷兰语、英语、法罗群岛语、佛兰德语、德语、夏威夷语、冰岛语、印度尼西亚语、爱尔兰语、挪威语、葡萄牙语、西班牙语、斯瓦西里语和瑞典语 C1 Control and Lation Supplement </td> 
+    </tr> 
+    <tr> 
+        <td> Latin Extended-A 拉丁文扩展集-A </td> 
+        <td> 256-383 </td> 
+        <td> 0100-017F </td> 
+        <td> 128 </td> 
+        <td> 该字符块增添了ISO 8859字符集Latin-2、Latin-3、Latin-4中的字符，而且是Basic Latin和Latin-1没有的字符。同它们结合能够编码南非荷兰语、法国布里多尼语、巴斯克语、加泰罗尼亚语、捷克语、世界语、爱沙尼亚语、法语、Friesland语、格陵兰岛语、匈牙利语、拉脱维亚语、立陶宛语、马耳它语、波兰语、普罗旺斯语、罗马尼亚语、吉普塞语、斯洛伐克语、斯洛文尼亚语、土耳其语和威尔士语 Latin Extended-A</td> 
+    </tr> 
+    <tr> 
+        <td> Latin Extended-B 拉丁文扩展集-B </td> 
+        <td> 384-591 </td> 
+        <td> 0180-024F </td> 
+        <td> 208 </td> 
+        <td> 大部分字符用于扩展Latin文字以处理使用非传统文字写的语言，包括许多非洲语言、克罗地亚连字符，与塞尔维亚古斯拉夫字母、中国的拼音和Latin-10中的Sami characters相匹配 Latin Extended-B</td> 
+    </tr> 
+    <tr> 
+        <td> IPA扩展字符集 </td> 
+        <td> 592-687 </td> 
+        <td> 0250-02AF </td> 
+        <td> 96 </td> 
+        <td> 国际音标字母 IPA Extendsions</td> 
+    </tr> 
+    <tr> 
+        <td> 间距调节字符 </td> 
+        <td> 688-767 </td> 
+        <td> 02B0-02FF </td> 
+        <td> 80 </td> 
+        <td> 通常能够改变前面字母发音的小符号 Spacing Modifiters</td> 
+    </tr> 
+    <tr> 
+        <td> 可识别的连接字符 </td> 
+        <td> 768-879 </td> 
+        <td> 0300-036F </td> 
+        <td> 112 </td> 
+        <td> 不独立存在，一般与前面的字母连用(放置在上边)的可识别的记号，如：~、‘and ?? Combining Diacritics Marks</td> 
+    </tr> 
+    <tr> 
+        <td> 希腊及科普特文 </td> 
+        <td> 880-1023 </td> 
+        <td> 0370-03FF </td> 
+        <td> 144 </td> 
+        <td> 基于ISO 8859-7的现代希腊语，同时提供古埃及语字符 Greek and Coptic</td> 
+    </tr> 
+    <tr> 
+        <td> 西里尔字母 </td> 
+        <td> 1024-1279 </td> 
+        <td> 0400-04FF </td> 
+        <td> 256 </td> 
+        <td> 基于ISO 8859-5上的语言,俄语和多数斯拉夫语(乌克兰语、Byelorussian等),前苏联的许多非斯拉夫语言(Azerbaijani,Ossetian,卡巴尔德语,Chechen,Tajik等).几种语言(库尔德语,阿布哈西亚语)需要Latin和古斯拉夫字母 Cyrillic</td> 
+    </tr> 
+    <tr> 
+        <td> 西里尔字母补充 </td> 
+        <td> 1280-1327 </td> 
+        <td> 0500-052F </td> 
+        <td> 48 </td> 
+        <td> Cyrillic Supplement </td> 
+    </tr> 
+    <tr> 
+        <td> 亚美尼亚语 </td> 
+        <td> 1328-1423 </td>
+        <td> 0530-058F </td>
+        <td> 96 </td>
+        <td> </td>
+        <tr>
+            <td> 希伯来语 </td> 
+            <td> 1424-1535 </td>
+            <td> 0590-05FF </td>
+            <td> 112 </td>
+            <td> 希伯来语（古典和现代）、依地语、Judezmo、早期美语 Hebrew </td> 
+        </tr> 
+        <tr> 
+            <td> 阿拉伯文 </td> 
+            <td> 1536-1791 </td> 
+            <td> 0600-06FF </td> 
+            <td> 256 </td> 
+            <td> 阿拉伯语，波斯语、Pashto、Sindhi、库尔德语和早期土耳其语 </td> 
+        </tr> 
+        <tr> 
+            <td> 叙利亚文 </td> 
+            <td> 1792-1871 </td> 
+            <td> 0700-074F </td> 
+            <td> 80 </td> 
+            <td> 叙利亚文 </td> 
+        </tr> 
+        <tr> 
+            <td> 阿拉伯补充语 </td> 
+            <td> 1872-1919 </td> 
+            <td> 0750-077F </td> 
+            <td> 48 </td> 
+            <td> Arabic Supplement </td> 
+        </tr> 
+        <tr> 
+            <td> 马尔代夫语 </td> 
+            <td> 1920-1983 </td> 
+            <td> 0780-07BF </td> 
+            <td> 64 </td> 
+            <td> Thaana </td> 
+        </tr> 
+        <tr> 
+            <td> 西非書面語言 </td> 
+            <td> 1984-2047 </td> 
+            <td> 07C0-07FF </td> 
+            <td> 64 </td> 
+            <td> N'Ko </td> 
+        </tr> 
+        <tr> 
+            <td> 阿维斯塔语及巴列维语 </td> 
+            <td> 2048-2143 </td> 
+            <td> 0800-085F </td> 
+            <td> 96 </td> 
+            <td> Avestan and Pahlavi </td> 
+        </tr> 
+        <tr> 
+            <td> Mandaic </td> 
+            <td> 2144-2175 </td> 
+            <td> 0860-087F </td> 
+            <td> 32 </td> 
+            <td> Mandaic </td> 
+        </tr> 
+        <tr> 
+            <td> 撒马利亚语 </td> 
+            <td> 2176-2223 </td> 
+            <td> 0880-08AF </td> 
+            <td> 48 </td> 
+            <td> Samaritan </td> 
+        </tr> 
+        <tr> 
+            <td> 梵文字母 </td> 
+            <td> 2304-2431 </td> 
+            <td> 0900-097F </td> 
+            <td> 128 </td> 
+            <td> Devanagari 梵语，北印度语，尼泊尔语和印度次大陆语言，包括： Awadhi,Bagheli,Bhatneri,Bhili,Bihari,BrajBhasha, Chhattisgarhi,Garhwali,Gondi,Harauti,Ho,Jaipuri, KachchhiKanauji,Konkani,Kului,Kumaoni,Kurku,Kurukh, Marwari,Mundari,Newari,Palpa,and Santali  </td> 
+        </tr> 
+        <tr> 
+            <td> 孟加拉语 </td> 
+            <td> 2432-2559 </td> 
+            <td> 0980-09FF </td> 
+            <td> 128 </td> 
+            <td> 一种北印度文字，使用于印度的西孟加拉州和孟加拉国的孟加拉语、阿萨姆语、Daphla、Garo、Hallam、Khasi、Manipuri、 Mizo、Naga、Munda、Rian、Santali </td> 
+        </tr> 
+        <tr> 
+            <td> Gurmukhi </td> 
+            <td> 2560-2687 </td> 
+            <td> 0A00-0A7F </td> 
+            <td> 128 </td> 
+            <td> 锡克教文 </td> 
+        </tr> 
+        <tr> 
+            <td> Gujarati </td> 
+            <td> 2688-2815 </td> 
+            <td> 0A80-0AFF </td> 
+            <td> 128 </td> 
+            <td> 古吉拉特文 </td> 
+        </tr> 
+        <tr> 
+            <td> Oriya </td> 
+            <td> 2816-2943 </td> 
+            <td> 0B00-0B7F </td> 
+            <td> 128 </td> 
+            <td> 奥里亚文 </td> 
+        </tr> 
+        <tr> 
+            <td> 泰米尔语 </td> 
+            <td> 2944-3071 </td> 
+            <td> 0B80-0BFF </td> 
+            <td> 128 </td> 
+            <td> 泰米尔语和Badaga、使用于南印度、斯里兰卡、新加坡和马来西亚部分地区 </td> 
+        </tr> 
+        <tr> 
+            <td> 泰卢固文 </td> 
+            <td> 3072-3199 </td> 
+	    <td> 0C00-0C7F </td>
+	    <td> 128 </td>
+            <td> Telugu、Gondi、Lambadi </td> 
+        </tr> 
+        <tr> 
+            <td> 卡纳达文 </td> 
+            <td> 3200-3327 </td> 
+	    <td> 0C80-0CFF </td>
+	    <td> 128 </td>
+            <td> Kannada </td> 
+        </tr> 
+        <tr> 
+            <td> Malalayam </td> 
+            <td> 3328-3455 </td> 
+            <td> 0D00-0D7F </td> 
+	    <td> 128 </td>
+            <td> 德拉维族语 </td> 
+        </tr> 
+        <tr> 
+            <td> Sinhala</td> 
+            <td> 3456-3583 </td> 
+            <td> 0D80-0DFF </td> 
+	    <td> 128 </td>
+            <td> 僧伽罗语 </td> 
+        </tr> 
+        <tr> 
+            <td> 泰国语 </td> 
+            <td> 3584-3711 </td> 
+            <td> 0E00-0E7F </td> 
+            <td> 128 </td> 
+            <td> Thai、Kuy、Lavna、巴利语 </td> 
+        </tr> 
+        <tr> 
+            <td> 老挝语 </td> 
+            <td> 3712-3839 </td> 
+            <td> 0E80-0EFF </td> 
+            <td> 128 </td> 
+            <td> Lao </td> 
+        </tr> 
+        <tr> 
+            <td> 西藏语 </td> 
+            <td> 3840-4095 </td> 
+            <td> 0F00-0FFF </td> 
+            <td> 256 </td> 
+            <td> 喜玛拉雅语包括Tibetan 、Ladakhi和Lahuli </td> 
+        </tr> 
+	<tr>
+            <td> 缅甸语</td>
+            <td> 4096-4255</td>
+            <td> 1000-109F</td>
+            <td> 160</td>
+            <td> Myanmar</td>
+	</tr>
+        <tr> 
+            <td> 格鲁吉亚语 </td> 
+            <td> 4256-4351 </td> 
+            <td> 10A0-10FF </td> 
+            <td> 96 </td> 
+            <td> Georgian </td> 
+        </tr> 
+        <tr> 
+            <td> Hangul Jamo </td> 
+            <td> 4352-4607 </td> 
+            <td> 1100-11FF </td> 
+            <td> 256 </td> 
+            <td> 朝鲜、韩国音节的字母组成部分 </td> 
+        </tr> 
+        <tr> 
+            <td> Latin的附加扩展集 </td> 
+            <td> 7680-7935 </td> 
+            <td> 1E00-1EFF </td> 
+            <td> 256 </td> 
+            <td> 标准的Latin字母如E和Y与可识别的记号组合在一起,除了用于越南语元音中，很少使用 </td> 
+        </tr> 
+        <tr> 
+            <td> 希腊语扩展集 </td> 
+            <td> 7936-8191 </td> 
+            <td> 1F00-1FFF </td> 
+            <td> 256 </td> 
+            <td> 希腊字母与可识别记号的组合,用于正统的希腊语中 </td> 
+        </tr> 
+        <tr> 
+            <td> 通用的标点符号 </td> 
+            <td> 8192-8303 </td> 
+            <td> 2000-206F </td> 
+            <td> 112 </td> 
+            <td> 各种标点符号 </td> 
+        </tr> 
+        <tr> 
+            <td> 上标和下标 </td> 
+            <td> 8304-8351 </td> 
+            <td> 2070-209F </td> 
+            <td> 48 </td> 
+            <td> 普通的上标和下标 </td> 
+        </tr> 
+        <tr> 
+            <td> 货币符号 </td> 
+            <td> 8352-8399 </td> 
+            <td> 20A0-20CF </td> 
+            <td> 48 </td> 
+            <td> 货币符号，一般在别的地方找不到 </td> 
+        </tr> 
+        <tr> 
+            <td> 用于符号的组合记号 </td> 
+            <td> 8400-8447 </td> 
+            <td> 20D0-20FF </td> 
+            <td> 48 </td> 
+            <td> 给多个字符做记号 </td> 
+        </tr> 
+        <tr> 
+            <td> 字母式符号 </td> 
+            <td> 8448-8527 </td> 
+            <td> 2070-209F </td> 
+            <td> 48 </td> 
+            <td> 像字母的符号，如&trade; </td> 
+        </tr> 
+        <tr> 
+            <td> 数字形式 </td> 
+            <td> 8528-8591 </td> 
+            <td> 2150-218F </td> 
+            <td> 64 </td> 
+            <td> 分数和罗马数字 </td> 
+        </tr> 
+        <tr> 
+            <td> 箭头符号 </td> 
+            <td> 8592-8703 </td> 
+            <td> 2190-21FF </td> 
+            <td> 112 </td> 
+            <td> 箭头符号 </td> 
+        </tr> 
+        <tr> 
+            <td> 数学运算符号 </td> 
+            <td> 8704-8959 </td> 
+            <td> 2200-22FF </td> 
+            <td> 256 </td> 
+            <td> Number Form </td> 
+        </tr> 
+        <tr> 
+            <td> 杂项工业符号 </td> 
+            <td> 8960-9215 </td> 
+            <td> 2300-23FF </td> 
+            <td> 256 </td> 
+            <td> Miscellaneous Technical </td> 
+        </tr> 
+        <tr> 
+            <td> 控制图形 </td> 
+            <td> 9216-9279 </td> 
+            <td> 2400-243F </td> 
+            <td> 64 </td> 
+            <td> Control Pictures </td> 
+        </tr> 
+        <tr> 
+            <td> 光学字符识别 </td> 
+            <td> 9280-9311 </td> 
+            <td> 2440-245F </td> 
+            <td> 32 </td> 
+            <td> Optical Character Recognition </td> 
+        </tr> 
+        <tr> 
+            <td> 封闭式字母数字 </td> 
+            <td> 9312-9471 </td> 
+            <td> 2460-24FF </td> 
+            <td> 160 </td> 
+            <td> Enclosed Alphanumerics </td> 
+        </tr> 
+        <tr> 
+            <td> 制表符 </td> 
+            <td> 9472-9599 </td> 
+            <td> 2500-257F </td> 
+            <td> 128 </td> 
+            <td> 用于在等间距终端上画方框的字符 </td> 
+        </tr> 
+        <tr> 
+            <td> 块元素 </td> 
+	    <td> 9600-9631 </td>
+	    <td> 2580-259F </td>
+	    <td> 32 </td>
+            <td> 用于DOS和其他用途的等间距终端图形 </td> 
+        </tr> 
+        <tr> 
+            <td> 几何形状 </td> 
+            <td> 9632-9727 </td> 
+	    <td> 25A0-25FF </td>
+	    <td> 96 </td>
+            <td> 正方形、菱形、三角形等 </td> 
+        </tr> 
+        <tr> 
+            <td> 杂项符号 </td> 
+            <td> 9728-9983 </td> 
+	    <td> 2600-26FF </td>
+	    <td> 256 </td>
+            <td> 纸牌、象棋、占卜等 </td> 
+        </tr> 
+        <tr> 
+            <td> Dingbats </td> 
+	    <td> 9984-10175 </td>
+	    <td> 2700-27BF</td>
+	    <td> 192 </td> 
+            <td> 印刷符号 </td> 
+        </tr> 
+	<tr>
+	   <td> Miscellaneous Mathematical Symbols-A</td>
+	   <td> 10176-10223</td>
+	   <td> 27C0-27EF</td>
+	   <td> 48 </td>
+	   <td> 杂项数学符号-A</td>
+	</tr>
+	<tr>
+	   <td> Supplemental Arrows-A</td>
+	   <td> 10224-10239</td>
+	   <td> 27F0-27FF</td>
+	   <td> 16 </td>
+	   <td> 追加箭头-A</td>
+	</tr>
+	<tr>
+	   <td> Braille Patterns</td>
+	   <td> 10240-10495</td>
+	   <td> 2800-28FF</td>
+	   <td> 256</td>
+	   <td> 盲文点字模型</td>
+	</tr>
+	<tr>
+	   <td> Supplemental Arrows-B</td>
+	   <td> 10496-10623 </td>
+	   <td> 2900-297F </td>
+	   <td> 128 </td>
+	   <td> 追加箭头-B</td>
+	</tr>
+	<tr>
+	   <td> Miscellaneous Mathematical Symbols-B</td>
+	   <td> 10624-10751 </td>
+	   <td> 2980-29FF </td>
+	   <td> 128 </td>
+	   <td> 杂项数学符号-B </td>
+	</tr>
+	<tr>
+	   <td> Supplemental Mathematical Operator </td>
+	   <td> 10752-11007 </td>
+	   <td> 2A00-2AFF </td>
+	   <td> 256 </td>
+	   <td> 追加数学运算符 </td>
+	</tr>
+	<tr>
+	   <td> Miscellaneous Symbols and Arrows </td>
+	   <td> 11008-11263 </td>
+	   <td> 2B00-2BFF </td>
+	   <td> 256 </td>
+	   <td> 杂项符号和箭头</td>
+	</tr>
+	<tr>
+	   <td> Glagolitic </td>
+	   <td> 11264-11359 </td>
+	   <td> 2C00-2C5F </td>
+	   <td> 96 </td>
+	   <td> 格拉哥里字母</td>
+	</tr>
+	<tr>
+	   <td> Latin Extended-C</td>
+	   <td> 11360-11391 </td>
+	   <td> 2C60-2C7F </td>
+	   <td> 32 </td>
+	   <td> 拉丁文扩展-C</td>
+	</tr>
+	<tr>
+	   <td> Coptic</td>
+	   <td> 11392-11519 </td>
+	   <td> 2C80-2CFF </td>
+	   <td> 128 </td>
+	   <td> 古埃及语</td>
+	</tr>
+	<tr>
+	   <td> Georgian Supplement</td>
+	   <td> 11520-11567 </td>
+	   <td> 2D00-2D2F </td>
+	   <td> 48 </td>
+	   <td> 格鲁吉亚语补充</td>
+	</tr>
+	<tr>
+	   <td> Tifinagh</td>
+	   <td> 11568-11647 </td>
+	   <td> 2D30-2D7F</td>
+	   <td> 80 </td>
+	   <td> 提非纳文</td>
+	</tr>
+	<tr>
+	   <td> Ethiopic Extended </td>
+	   <td> 11648-11743 </td>
+	   <td> 2D80-2DDF </td>
+	   <td> 96 </td>
+	   <td> 埃塞俄比亚语扩展 </td>
+	</tr>
+	<tr>
+	   <td> Supplemental Punctuation </td>
+	   <td> 11776-11903 </td>
+	   <td> 2E00-2E7F </td>
+	   <td> 128 </td>
+	   <td> 追加标点 </td>
+	</tr>
+	<tr>
+	   <td> Radicals Supplement </td>
+	   <td> 11904-12031 </td>
+	   <td> 2E80-2EFF </td>
+	   <td> 128 </td>
+	   <td> CJK 部首补充 </td>
+	</tr>
+	<tr>
+	   <td> Kangxi Radicals </td>
+	   <td> 12032-12255 </td>
+	   <td> 2F00-2FDF </td>
+	   <td> 224 </td>
+	   <td> 康熙字典部首 </td>
+	</tr>
+	<tr>
+	   <td> Ideographic Description Characters </td>
+	   <td> 12272-12287 </td>
+	   <td> 2FF0-2FFF </td>
+	   <td> 16 </td>
+	   <td> 表意文字描述符 </td>
+	</tr>
+        <tr> 
+            <td> CJK符号和标点 </td> 
+            <td> 12288-12351 </td> 
+            <td> 3000-303F </td> 
+            <td> 64 </td> 
+            <td> 用于CJK的标点符号 </td> 
+        </tr> 
+        <tr> 
+            <td> 日文平假名 </td> 
+            <td> 12352-12447 </td> 
+            <td> 3040-309F </td> 
+            <td> 96 </td> 
+            <td> 日文字母的草体.  </td> 
+        </tr> 
+        <tr> 
+            <td> 日文片假名 </td> 
+            <td> 12448-12543 </td> 
+            <td> 30A0-30FF </td> 
+            <td> 96 </td> 
+            <td> 非草体的日文字母,通常用于西方的外来词汇，像"keyboard" </td> 
+        </tr> 
+        <tr> 
+            <td> 汉语拼音字母 </td> 
+            <td> 12544-12591 </td> 
+            <td> 3100-312F </td> 
+            <td> 48 </td> 
+            <td> 中国的发音字母表 </td> 
+        </tr> 
+        <tr> 
+            <td> 朝鲜文兼容字母 </td> 
+            <td> 12592-12687 </td> 
+            <td> 3130-318F </td> 
+            <td> 96 </td> 
+            <td> Hangul Compatibility Jamo </td> 
+        </tr> 
+        <tr> 
+            <td> Kanbun </td> 
+            <td> 12688-12703 </td> 
+            <td> 3190-319F </td> 
+            <td> 16 </td> 
+            <td> 在日文中用于指示古典中文的阅读顺序的记号 </td> 
+        </tr> 
+        <tr> 
+            <td> 注音字母扩展 </td> 
+            <td> 12704-12735 </td> 
+            <td> 31A0-31BF </td> 
+            <td> 32 </td> 
+            <td> Bopomofo Extended </td> 
+        </tr> 
+        <tr> 
+            <td> 括起来的CJK字母和月份 </td> 
+            <td> 12800-13055 </td> 
+            <td> 3200-32FF </td> 
+            <td> 256 </td> 
+            <td> Enclosed CJK Letters and Months </td> 
+        </tr> 
+        <tr>
+            <td> CJK Compatibility </td> 
+            <td> 13056-13311 </td> 
+            <td> 3300-33FF </td> 
+            <td> 256 </td> 
+            <td> 只用于编码KSC 5601和CNS 11643的字符 </td> 
+        </tr> 
+        <tr>
+            <td> CJK统一表意符号扩展A </td> 
+            <td> 13311-19903 </td> 
+            <td> 3400-4DBF </td> 
+            <td> 6592 </td> 
+            <td> CJK Unified Ideographs Extension A </td> 
+        </tr> 
+        <tr> 
+            <td> 统一的CJK象形文字 </td> 
+            <td> 19968-40895 </td> 
+            <td> 4E00-9FBF </td> 
+            <td> 20928 </td> 
+            <td> 用于中文、日文和韩文的Han象形文字 </td> 
+        </tr> 
+        <tr> 
+            <td> Hangul音节 </td> 
+            <td> 44032-55215 </td> 
+            <td> AC00-D7AF </td> 
+            <td> 11184 </td> 
+            <td> 一种韩国音节 </td> 
+        </tr> 
+        <tr> 
+            <td> Hight-half zone of UTF-16 </td> 
+            <td> 55296-56319 </td> 
+            <td> D800-DBFF </td> 
+            <td> 1024 </td> 
+            <td> 目前还不能使用，将来可用于扩展Unicode，使它包括超过百万的字符 </td> 
+        </tr> 
+        <tr> 
+            <td> Low-half zone of UTF-16 </td> 
+            <td> 56320-57343 </td> 
+            <td> DC00-DFFF </td> 
+            <td> 1024 </td> 
+            <td> 目前还不能使用，将来可用于扩展Unicode，使它包括超过百万的字符 </td> 
+        </tr> 
+        <tr> 
+            <td> 个人使用 </td> 
+            <td> 57344-63743 </td> 
+            <td> E000-F8FF </td> 
+            <td> 6400 </td> 
+            <td> 软件开发者可以在此包含自己的术语，与正在执行的字符不同 Private Use Zone</td> 
+        </tr> 
+        <tr> 
+            <td> CJK兼容性象形文字 </td> 
+            <td> 63744-64255 </td> 
+            <td> F900-FAFF </td> 
+            <td> 512 </td> 
+            <td> 为了保持与现有的标准的一致性如KSC 5601,而使用的一些汉字象形文字 CJK Compatibility Ideographs</td> 
+        </tr> 
+        <tr> 
+            <td> 字母表達形式 </td> 
+            <td> 64256-64335 </td> 
+            <td> FB00-FB4F </td> 
+            <td> 80 </td> 
+            <td> 使用于Latin、美语和希伯来语中的连字和变种 Alphabetic Presetation Form</td> 
+        </tr> 
+        <tr> 
+            <td> 阿拉伯表象形式 </td> 
+            <td> 64336-65023 </td> 
+            <td> FB50-FDFF </td> 
+            <td> 688 </td> 
+            <td> 各种阿拉伯字符的变种 Arabic Presentation Form-A</td> 
+        </tr> 
+        <tr> 
+            <td> 变量选择符 </td> 
+            <td> 65024-65039 </td> 
+            <td> FE00-FE0F </td> 
+            <td> 16 </td> 
+            <td> Variation Selector</td> 
+        </tr> 
+        <tr> 
+            <td> 竖排形式 </td> 
+            <td> 65040-65055</td> 
+            <td> FE00-FE0F </td> 
+            <td> 16 </td> 
+            <td> Variation Forms</td> 
+        </tr> 
+        <tr> 
+            <td> 组合半记号 </td> 
+            <td> 65056-65071 </td> 
+            <td> FE20-FE2F </td> 
+            <td> 16 </td> 
+            <td> 把跨越多个字符的多个可识别记号连成一个可识别的记号 Combining Half Marks</td> 
+        </tr> 
+        <tr> 
+            <td> CJK兼容性形式 </td> 
+            <td> 65072-65103 </td> 
+            <td> FE30-FE4F </td> 
+            <td> 32 </td> 
+            <td> 用于台湾汉字象形文字 CJK Compatibility Forms</td> 
+        </tr> 
+        <tr> 
+            <td> 小型变体 </td> 
+            <td> 65104-65135 </td> 
+            <td> FE50-FE6F </td> 
+            <td> 32 </td> 
+            <td> 用于台湾的ASCII标点符号的小的版本 Small Form Variants</td> 
+        </tr> 
+        <tr> 
+            <td> 附加的阿拉伯表象形式 </td> 
+            <td> 65136-65279 </td> 
+            <td> FE70-FEFF </td> 
+            <td> 144 </td> 
+            <td> 各种阿拉伯字符变种 Arabic Presetation Form-B </td> 
+        </tr> 
+        <tr> 
+            <td> 半宽和全宽形式 </td> 
+            <td> 65280-65519 </td> 
+            <td> FF00-FFEF </td> 
+            <td> 240 </td> 
+            <td> 能够在中文和日文的不同代码间转换的字符 Halfwidth and Fullwidth Form </td> 
+        </tr> 
+        <tr> 
+            <td> 特殊字符 </td> 
+            <td> 65520-65535 </td> 
+            <td> FFF0-FFFF </td> 
+            <td> 16 </td> 
+            <td> 字节顺序记号和零宽度的非中断性空格，常用于Unicode 文件的开始 </td> 
+        </tr> 
+    </table> 
