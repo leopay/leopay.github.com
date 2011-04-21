@@ -1,0 +1,13 @@
+---
+layout: post 
+title: mercurial(hg) hooks
+---
+
+<p>
+如果我们在使用hg时，有一个centralized repository，我们希望能控制一些不希望的文件进入版本库
+比如不希望.hgignore进入这个版本库，而让大家自己用自己的.hgignore文件, 可以借助于hook
+</p>
+{% highlight bash %}
+[hooks]
+pretxnchangegroup = [ `hg st --change $HG_NODE|grep -qv ".hgignore"` = 0 ] && exit 0 || echo "Error!!! cannot contain \`.hgignore\` file in your commit"; exit 1
+{% endhighlight %}

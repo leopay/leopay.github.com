@@ -12,3 +12,8 @@ h1, h4, h6 {
 .hp h6 {
   margin: 0; padding-left:1em;
 }
+
+div.highlight {
+    overflow-x: scroll;
+}
+
