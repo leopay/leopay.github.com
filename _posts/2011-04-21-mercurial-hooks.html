@@ -9,5 +9,5 @@ title: mercurial(hg) hooks
 </p>
 {% highlight bash %}
 [hooks]
-pretxnchangegroup = `hg st --change $HG_NODE|grep -qv ".hgignore"` && exit 0 || echo "Error!!! cannot contain \`.hgignore\` file in your commit"; exit 1
+pretxnchangegroup = hg st --change $HG_NODE|grep -qv ".hgignore" && exit 0 || echo "Error!!! cannot contain \`.hgignore\` file in your commit"; exit 1
 {% endhighlight %}
