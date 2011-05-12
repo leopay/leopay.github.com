@@ -1,7 +1,9 @@
 # destination:  ./_site
 auto:         true
+safe:           true
 # lsi:          false
-# server_port:  4000 
+server:       true
+server_port:  4000 
 pygments:       true
 markdown:       rdiscount
 permalink:      none
