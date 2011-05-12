@@ -1,6 +1,6 @@
 ---
 layout: post 
-title: implementing rc4 using python
+title: RC4 Implementation in Python
 ---
 
 ####RC4算法介绍
@@ -18,13 +18,13 @@ title: implementing rc4 using python
             x = (x + s[i] + ord(key[i % len(key)])) % 256 
             s[i], s[x] = s[x], s[i]
         x = y = 0 
-        out = ""
+        out = []
         for c in data:
             x = (x + 1) % 256 
             y = (y + s[x]) % 256 
             s[x], s[y] = s[y], s[x]
-            out += chr(ord(c) ^ s[(s[x] + s[y]) % 256])
-        return out
+            out.append(chr(ord(c) ^ s[(s[x] + s[y]) % 256]))
+        return ''.join(out)
 
     >>> RC4('test','1234567890')
     >>> '\xbeI\x86u'
